@@ -7,7 +7,7 @@ digits = datasets.load_digits()
 #訓練要出たとテスト用データに分ける
 data_train, data_test, label_train, label_test = \
 	train_test_split(digits.data, digits.target)
-	
+
 #SVMアルゴリズムを利用してモデルを構築する
 clf = svm.SVC(gamma=0.001)
 clf.fit(data_train, label_train)
